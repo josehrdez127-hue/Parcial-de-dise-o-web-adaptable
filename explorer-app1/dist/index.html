@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Where in the world?</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Iconos -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-BTzN6_2A.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-eHtOFVqk.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- ================= HEADER ================= -->
+    <header class="relative h-20 bg-white border-b border-slate-200">
+
+        <div class="max-w-7xl mx-auto h-full px-6 md:px-8 flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="flex items-center gap-3">
+
+                <img
+                    src="/world.svg"
+                    alt=""
+                    class="w-8 h-8"
+                    aria-hidden="true">
+
+                <span class="font-bold text-lg">
+                    Where in the world?
+                </span>
+
+            </div>
+
+
+            <!-- Navegación móvil -->
+            <button
+                id="menu-toggle"
+                type="button"
+                class="md:hidden p-2 text-slate-600 hover:text-blue-600"
+                aria-label="Abrir menú"
+                aria-controls="main-menu"
+                aria-expanded="false">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Navegación -->
+            <nav
+                id="main-menu"
+                class="hidden absolute top-20 left-0 right-0 z-10
+                       flex-col gap-5 bg-white border-b border-slate-200
+                       px-6 py-5 text-sm md:static md:flex md:flex-row
+                       md:items-center md:gap-8 md:border-0 md:p-0">
+
+                <a href="#"
+                   class="text-slate-600 hover:text-blue-600 transition">
+                    Inicio
+                </a>
+
+                <a href="#"
+                   class="font-semibold text-blue-600">
+                    Explorar países
+                </a>
+
+                <a href="#"
+                   class="text-slate-600 hover:text-blue-600 transition">
+                    Acerca de
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= CONTENIDO ================= -->
+    <main class="max-w-7xl mx-auto px-6 md:px-8 py-14">
+
+        <!-- Título -->
+        <section class="mb-10">
+
+            <h1 class="text-4xl font-bold tracking-tight mb-3">
+                Explorar países del mundo
+            </h1>
+
+            <p class="text-slate-600 text-base">
+                Busca un país o filtra por región para consultar su información
+            </p>
+
+        </section>
+
+
+        <!-- ================= FILTROS ================= -->
+        <section class="flex flex-col md:flex-row
+                        justify-between gap-5 mb-10">
+
+            <!-- Buscador -->
+            <div class="relative w-full md:w-120">
+
+                  <i data-lucide="search"
+                     class="absolute left-4 top-1/2
+                         -translate-y-1/2
+                         w-5 h-5 text-slate-500">
+                  </i>
+
+                <input
+                    type="text"
+                    placeholder="Escriba el nombre del país..."
+                    class="w-full h-14 pl-12 pr-4
+                           bg-white border border-slate-200
+                           rounded-xl outline-none
+                           focus:border-blue-500
+                           focus:ring-2
+                           focus:ring-blue-100
+                           transition"
+                >
+
+            </div>
+
+
+            <!-- Región -->
+            <select
+                class="w-full md:w-60 h-14 px-4
+                       bg-white border border-slate-200
+                       rounded-xl outline-none
+                       focus:border-blue-500
+                       focus:ring-2
+                       focus:ring-blue-100">
+
+                <option>Busque por región</option>
+                <option>América</option>
+                <option>Europa</option>
+                <option>Asia</option>
+                <option>África</option>
+                <option>Oceanía</option>
+
+            </select>
+
+        </section>
+
+
+        <!-- ================= TARJETAS ================= -->
+        <section
+            class="grid grid-cols-1 sm:grid-cols-2
+                   lg:grid-cols-4 gap-6">
+
+
+            <!-- ========== CANADÁ ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/ca.png"
+                    alt="Bandera de Canadá"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Canadá
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> Ottawa</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Conocido por sus vastos paisajes vírgenes,
+                        lagos cristalinos y una vibrante diversidad
+                        multicultural.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== JAPÓN ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/jp.png"
+                    alt="Bandera de Japón"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Japón
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> Tokio</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        La fusión perfecta entre tecnología futurista
+                        y tradiciones ancestrales milenarias que
+                        definen cada rincón.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== ITALIA ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/it.png"
+                    alt="Bandera de Italia"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Italia
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> Roma</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Cuna del Renacimiento, famosa en el mundo
+                        entero por su arte, gastronomía, historia
+                        y patrimonio cultural.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== AUSTRALIA ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/au.png"
+                    alt="Bandera de Australia"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Australia
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> Canberra</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Un continente único rodeado de arrecifes
+                        espectaculares, fauna endémica y playas
+                        doradas interminables.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== ESPAÑA ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/es.png"
+                    alt="Bandera de España"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        España
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> Madrid</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Destaca por su rica historia, arquitectura,
+                        gastronomía y ciudades llenas de cultura.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== BRASIL ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/br.png"
+                    alt="Bandera de Brasil"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Brasil
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> Brasilia</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Un país lleno de biodiversidad, playas,
+                        música, cultura y paisajes naturales
+                        impresionantes.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== FRANCIA ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/fr.png"
+                    alt="Bandera de Francia"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Francia
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> París</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Reconocida por su arquitectura, arte,
+                        gastronomía y numerosos lugares históricos.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ========== EGIPTO ========== -->
+            <article
+                class="bg-white rounded-2xl overflow-hidden
+                       border border-slate-200
+                       hover:-translate-y-1
+                       hover:shadow-lg
+                       transition duration-300">
+
+                <img
+                    src="https://flagcdn.com/w640/eg.png"
+                    alt="Bandera de Egipto"
+                    class="w-full h-40 object-cover">
+
+                <div class="p-5">
+
+                    <h2 class="text-xl font-bold mb-2">
+                        Egipto
+                    </h2>
+
+                    <p class="text-sm mb-3">
+                        <span class="font-semibold">Capital:</span>
+                        <span class="text-slate-500"> El Cairo</span>
+                    </p>
+
+                    <p class="text-sm text-slate-600
+                              line-clamp-2 mb-4">
+                        Un destino histórico conocido por sus
+                        antiguas civilizaciones, templos y
+                        monumentos milenarios.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+
+
+</body>
+</html>
