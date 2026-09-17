@@ -1,0 +1,282 @@
+[
+  {
+    "name": { "common": "Canadá" },
+    "capital": ["Ottawa"],
+    "region": "Americas",
+    "population": 38005238,
+    "flags": {
+      "png": "https://flagcdn.com/w640/ca.png",
+      "alt": "Bandera de Canadá"
+    }
+  },
+  {
+    "name": { "common": "Japón" },
+    "capital": ["Tokio"],
+    "region": "Asia",
+    "population": 125836021,
+    "flags": {
+      "png": "https://flagcdn.com/w640/jp.png",
+      "alt": "Bandera de Japón"
+    }
+  },
+  {
+    "name": { "common": "Italia" },
+    "capital": ["Roma"],
+    "region": "Europe",
+    "population": 58870762,
+    "flags": {
+      "png": "https://flagcdn.com/w640/it.png",
+      "alt": "Bandera de Italia"
+    }
+  },
+  {
+    "name": { "common": "Australia" },
+    "capital": ["Canberra"],
+    "region": "Oceania",
+    "population": 26439111,
+    "flags": {
+      "png": "https://flagcdn.com/w640/au.png",
+      "alt": "Bandera de Australia"
+    }
+  },
+  {
+    "name": { "common": "España" },
+    "capital": ["Madrid"],
+    "region": "Europe",
+    "population": 47519628,
+    "flags": {
+      "png": "https://flagcdn.com/w640/es.png",
+      "alt": "Bandera de España"
+    }
+  },
+  {
+    "name": { "common": "Brasil" },
+    "capital": ["Brasilia"],
+    "region": "Americas",
+    "population": 216422446,
+    "flags": {
+      "png": "https://flagcdn.com/w640/br.png",
+      "alt": "Bandera de Brasil"
+    }
+  },
+  {
+    "name": { "common": "Francia" },
+    "capital": ["París"],
+    "region": "Europe",
+    "population": 68106842,
+    "flags": {
+      "png": "https://flagcdn.com/w640/fr.png",
+      "alt": "Bandera de Francia"
+    }
+  },
+  {
+    "name": { "common": "Egipto" },
+    "capital": ["El Cairo"],
+    "region": "Africa",
+    "population": 117335918,
+    "flags": {
+      "png": "https://flagcdn.com/w640/eg.png",
+      "alt": "Bandera de Egipto"
+    }
+  },
+  {
+    "name": { "common": "México" },
+    "capital": ["Ciudad de México"],
+    "region": "Americas",
+    "population": 128932753,
+    "flags": {
+      "png": "https://flagcdn.com/w640/mx.png",
+      "alt": "Bandera de México"
+    }
+  },
+  {
+    "name": { "common": "Argentina" },
+    "capital": ["Buenos Aires"],
+    "region": "Americas",
+    "population": 45773884,
+    "flags": {
+      "png": "https://flagcdn.com/w640/ar.png",
+      "alt": "Bandera de Argentina"
+    }
+  },
+  {
+    "name": { "common": "Colombia" },
+    "capital": ["Bogotá"],
+    "region": "Americas",
+    "population": 51874024,
+    "flags": {
+      "png": "https://flagcdn.com/w640/co.png",
+      "alt": "Bandera de Colombia"
+    }
+  },
+  {
+    "name": { "common": "Perú" },
+    "capital": ["Lima"],
+    "region": "Americas",
+    "population": 34049588,
+    "flags": {
+      "png": "https://flagcdn.com/w640/pe.png",
+      "alt": "Bandera de Perú"
+    }
+  },
+  {
+    "name": { "common": "Chile" },
+    "capital": ["Santiago"],
+    "region": "Americas",
+    "population": 19629590,
+    "flags": {
+      "png": "https://flagcdn.com/w640/cl.png",
+      "alt": "Bandera de Chile"
+    }
+  },
+  {
+    "name": { "common": "Alemania" },
+    "capital": ["Berlín"],
+    "region": "Europe",
+    "population": 83783942,
+    "flags": {
+      "png": "https://flagcdn.com/w640/de.png",
+      "alt": "Bandera de Alemania"
+    }
+  },
+  {
+    "name": { "common": "Reino Unido" },
+    "capital": ["Londres"],
+    "region": "Europe",
+    "population": 67736802,
+    "flags": {
+      "png": "https://flagcdn.com/w640/gb.png",
+      "alt": "Bandera del Reino Unido"
+    }
+  },
+  {
+    "name": { "common": "Países Bajos" },
+    "capital": ["Ámsterdam"],
+    "region": "Europe",
+    "population": 17232124,
+    "flags": {
+      "png": "https://flagcdn.com/w640/nl.png",
+      "alt": "Bandera de los Países Bajos"
+    }
+  },
+  {
+    "name": { "common": "Suecia" },
+    "capital": ["Estocolmo"],
+    "region": "Europe",
+    "population": 10353442,
+    "flags": {
+      "png": "https://flagcdn.com/w640/se.png",
+      "alt": "Bandera de Suecia"
+    }
+  },
+  {
+    "name": { "common": "Grecia" },
+    "capital": ["Atenas"],
+    "region": "Europe",
+    "population": 10482455,
+    "flags": {
+      "png": "https://flagcdn.com/w640/gr.png",
+      "alt": "Bandera de Grecia"
+    }
+  },
+  {
+    "name": { "common": "India" },
+    "capital": ["Nueva Delhi"],
+    "region": "Asia",
+    "population": 1428627663,
+    "flags": {
+      "png": "https://flagcdn.com/w640/in.png",
+      "alt": "Bandera de India"
+    }
+  },
+  {
+    "name": { "common": "China" },
+    "capital": ["Pekín"],
+    "region": "Asia",
+    "population": 1411778724,
+    "flags": {
+      "png": "https://flagcdn.com/w640/cn.png",
+      "alt": "Bandera de China"
+    }
+  },
+  {
+    "name": { "common": "Corea del Sur" },
+    "capital": ["Seúl"],
+    "region": "Asia",
+    "population": 51784059,
+    "flags": {
+      "png": "https://flagcdn.com/w640/kr.png",
+      "alt": "Bandera de Corea del Sur"
+    }
+  },
+  {
+    "name": { "common": "Tailandia" },
+    "capital": ["Bangkok"],
+    "region": "Asia",
+    "population": 71801279,
+    "flags": {
+      "png": "https://flagcdn.com/w640/th.png",
+      "alt": "Bandera de Tailandia"
+    }
+  },
+  {
+    "name": { "common": "Vietnam" },
+    "capital": ["Hanói"],
+    "region": "Asia",
+    "population": 100300000,
+    "flags": {
+      "png": "https://flagcdn.com/w640/vn.png",
+      "alt": "Bandera de Vietnam"
+    }
+  },
+  {
+    "name": { "common": "Nigeria" },
+    "capital": ["Abuya"],
+    "region": "Africa",
+    "population": 223804632,
+    "flags": {
+      "png": "https://flagcdn.com/w640/ng.png",
+      "alt": "Bandera de Nigeria"
+    }
+  },
+  {
+    "name": { "common": "Kenia" },
+    "capital": ["Nairobi"],
+    "region": "Africa",
+    "population": 55100586,
+    "flags": {
+      "png": "https://flagcdn.com/w640/ke.png",
+      "alt": "Bandera de Kenia"
+    }
+  },
+  {
+    "name": { "common": "Sudáfrica" },
+    "capital": ["Pretoria"],
+    "region": "Africa",
+    "population": 60041941,
+    "flags": {
+      "png": "https://flagcdn.com/w640/za.png",
+      "alt": "Bandera de Sudáfrica"
+    }
+  },
+  {
+    "name": { "common": "Nueva Zelanda" },
+    "capital": ["Wellington"],
+    "region": "Oceania",
+    "population": 5185288,
+    "flags": {
+      "png": "https://flagcdn.com/w640/nz.png",
+      "alt": "Bandera de Nueva Zelanda"
+    }
+  },
+  {
+    "name": { "common": "Turquía" },
+    "capital": ["Ankara"],
+    "region": "Asia",
+    "population": 85816199,
+    "flags": {
+      "png": "https://flagcdn.com/w640/tr.png",
+      "alt": "Bandera de Turquía"
+    }
+  }
+]

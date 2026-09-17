@@ -21,8 +21,8 @@
             overflow: hidden;
         }
     </style>
-  <script type="module" crossorigin src="/assets/index-BTzN6_2A.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-eHtOFVqk.css">
+  <script type="module" crossorigin src="/assets/index-ClJw5_2s.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BbxGvc5G.css">
 </head>
 
 <body class="bg-slate-50 text-slate-900">
@@ -120,6 +120,7 @@
                   </i>
 
                 <input
+                    id="country-search"
                     type="text"
                     placeholder="Escriba el nombre del país..."
                     class="w-full h-14 pl-12 pr-4
@@ -136,6 +137,7 @@
 
             <!-- Región -->
             <select
+                id="region-filter"
                 class="w-full md:w-60 h-14 px-4
                        bg-white border border-slate-200
                        rounded-xl outline-none
@@ -143,12 +145,12 @@
                        focus:ring-2
                        focus:ring-blue-100">
 
-                <option>Busque por región</option>
-                <option>América</option>
-                <option>Europa</option>
-                <option>Asia</option>
-                <option>África</option>
-                <option>Oceanía</option>
+                <option value="all">Busque por región</option>
+                <option value="Americas">América</option>
+                <option value="Europe">Europa</option>
+                <option value="Asia">Asia</option>
+                <option value="Africa">África</option>
+                <option value="Oceania">Oceanía</option>
 
             </select>
 
@@ -157,295 +159,9 @@
 
         <!-- ================= TARJETAS ================= -->
         <section
+            id="countries-grid"
             class="grid grid-cols-1 sm:grid-cols-2
                    lg:grid-cols-4 gap-6">
-
-
-            <!-- ========== CANADÁ ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/ca.png"
-                    alt="Bandera de Canadá"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Canadá
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> Ottawa</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Conocido por sus vastos paisajes vírgenes,
-                        lagos cristalinos y una vibrante diversidad
-                        multicultural.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== JAPÓN ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/jp.png"
-                    alt="Bandera de Japón"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Japón
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> Tokio</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        La fusión perfecta entre tecnología futurista
-                        y tradiciones ancestrales milenarias que
-                        definen cada rincón.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== ITALIA ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/it.png"
-                    alt="Bandera de Italia"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Italia
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> Roma</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Cuna del Renacimiento, famosa en el mundo
-                        entero por su arte, gastronomía, historia
-                        y patrimonio cultural.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== AUSTRALIA ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/au.png"
-                    alt="Bandera de Australia"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Australia
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> Canberra</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Un continente único rodeado de arrecifes
-                        espectaculares, fauna endémica y playas
-                        doradas interminables.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== ESPAÑA ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/es.png"
-                    alt="Bandera de España"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        España
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> Madrid</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Destaca por su rica historia, arquitectura,
-                        gastronomía y ciudades llenas de cultura.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== BRASIL ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/br.png"
-                    alt="Bandera de Brasil"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Brasil
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> Brasilia</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Un país lleno de biodiversidad, playas,
-                        música, cultura y paisajes naturales
-                        impresionantes.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== FRANCIA ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/fr.png"
-                    alt="Bandera de Francia"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Francia
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> París</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Reconocida por su arquitectura, arte,
-                        gastronomía y numerosos lugares históricos.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ========== EGIPTO ========== -->
-            <article
-                class="bg-white rounded-2xl overflow-hidden
-                       border border-slate-200
-                       hover:-translate-y-1
-                       hover:shadow-lg
-                       transition duration-300">
-
-                <img
-                    src="https://flagcdn.com/w640/eg.png"
-                    alt="Bandera de Egipto"
-                    class="w-full h-40 object-cover">
-
-                <div class="p-5">
-
-                    <h2 class="text-xl font-bold mb-2">
-                        Egipto
-                    </h2>
-
-                    <p class="text-sm mb-3">
-                        <span class="font-semibold">Capital:</span>
-                        <span class="text-slate-500"> El Cairo</span>
-                    </p>
-
-                    <p class="text-sm text-slate-600
-                              line-clamp-2 mb-4">
-                        Un destino histórico conocido por sus
-                        antiguas civilizaciones, templos y
-                        monumentos milenarios.
-                    </p>
-
-                </div>
-
-            </article>
-
         </section>
 
     </main>
