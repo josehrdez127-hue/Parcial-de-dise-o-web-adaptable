@@ -11,5 +11,5 @@ export async function fetchCountries(): Promise<Country[]> {
 
     const countries: CountriesResponse = await response.json();
 
-    return countries;
+    return countries.slice(0, 25);
 }

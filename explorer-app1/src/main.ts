@@ -1,8 +1,8 @@
 import './style.css';
-
 import { fetchCountries } from './api/countries';
 import { renderCountryGrid } from './render/countryGrid';
 import type { Country } from './types/country';
+import { filterCountries as filterCountryList } from './utils/filter';
 
 declare const lucide: {
     createIcons: () => void;
@@ -15,6 +15,7 @@ const searchInput = document.querySelector<HTMLInputElement>('#country-search');
 const regionFilter = document.querySelector<HTMLSelectElement>('#region-filter');
 
 let allCountries: Country[] = [];
+let debounceTimer: number | undefined;
 
 function setMenuState(isOpen: boolean): void {
     if (!menuButton || !mainMenu) {
@@ -48,31 +49,28 @@ desktopBreakpoint.addEventListener('change', () => {
     setMenuState(false);
 });
 
-function filterCountries(): void {
-    const searchText = searchInput?.value.toLowerCase().trim() || '';
-    const selectedRegion = regionFilter?.value || 'all';
+function applyFilters(): void {
+    const searchText = searchInput?.value.trim().toLowerCase() ?? '';
+    const selectedRegion = regionFilter?.value ?? 'all';
 
-    const filteredCountries = allCountries.filter((country) => {
-        const matchesName = country.name.common
-            .toLowerCase()
-            .includes(searchText);
-
-        const matchesRegion =
-            selectedRegion === 'all' || country.region === selectedRegion;
-
-        return matchesName && matchesRegion;
-    });
-
+    const filteredCountries = filterCountryList(allCountries, searchText, selectedRegion);
     renderCountryGrid(countriesGrid, filteredCountries);
 }
 
-searchInput?.addEventListener('input', filterCountries);
-regionFilter?.addEventListener('change', filterCountries);
+function handleSearchInput(): void {
+    window.clearTimeout(debounceTimer);
+    debounceTimer = window.setTimeout(() => {
+        applyFilters();
+    }, 300);
+}
+
+searchInput?.addEventListener('input', handleSearchInput);
+regionFilter?.addEventListener('change', applyFilters);
 
 async function init(): Promise<void> {
     try {
         allCountries = await fetchCountries();
-        renderCountryGrid(countriesGrid, allCountries);
+        applyFilters();
 
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();

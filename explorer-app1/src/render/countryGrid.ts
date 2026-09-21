@@ -11,7 +11,7 @@ export function renderCountryGrid(container: HTMLElement | null, countries: Coun
     if (countries.length === 0) {
         container.innerHTML = `
             <p class="col-span-full text-center text-slate-500 py-10">
-                No se encontraron países.
+                No se encontraron países con ese nombre o región.
             </p>
         `;
         return;
