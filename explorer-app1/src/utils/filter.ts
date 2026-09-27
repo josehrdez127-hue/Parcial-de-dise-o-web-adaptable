@@ -13,7 +13,10 @@ export function filterCountries(
             country.name.common.toLowerCase().includes(normalizedQuery);
 
         const matchesRegion =
-            region === 'all' || region === '' || country.region === region;
+            region === 'all' ||
+            region === '' ||
+            country.region === region ||
+            country.subregion === region;
 
         return matchesName && matchesRegion;
     });

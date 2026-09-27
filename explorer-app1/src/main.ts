@@ -1,6 +1,7 @@
 import './style.css';
-import { fetchCountries } from './api/countries';
+import { fetchCountries, fetchCountryByCode } from './api/countries';
 import { renderCountryGrid } from './render/countryGrid';
+import { renderCountryDetail, renderDetailError, renderDetailLoading } from './render/detail';
 import { renderEmpty, renderError, renderLoading } from './render/states';
 import type { Country } from './types/country';
 import { filterCountries as filterCountryList } from './utils/filter';
@@ -12,11 +13,14 @@ declare const lucide: {
 const menuButton = document.querySelector<HTMLButtonElement>('#menu-toggle');
 const mainMenu = document.querySelector<HTMLElement>('#main-menu');
 const countriesGrid = document.querySelector<HTMLElement>('#countries-grid');
+const countryListView = document.querySelector<HTMLElement>('#country-list-view');
+const countryDetailView = document.querySelector<HTMLElement>('#country-detail-view');
 const searchInput = document.querySelector<HTMLInputElement>('#country-search');
 const regionFilter = document.querySelector<HTMLSelectElement>('#region-filter');
 
 let allCountries: Country[] = [];
 let debounceTimer: number | undefined;
+let activeDetailRequest = 0;
 
 function setMenuState(isOpen: boolean): void {
     if (!menuButton || !mainMenu) {
@@ -76,6 +80,55 @@ function handleSearchInput(): void {
 searchInput?.addEventListener('input', handleSearchInput);
 regionFilter?.addEventListener('change', applyFilters);
 
+async function router(): Promise<void> {
+    const route = window.location.hash.match(/^#\/country\/([a-z]{2})$/i);
+
+    if (!route) {
+        countryListView?.classList.remove('hidden');
+        countryDetailView?.classList.add('hidden');
+        return;
+    }
+
+    const requestId = ++activeDetailRequest;
+    const countryCode = route[1].toUpperCase();
+    countryListView?.classList.add('hidden');
+
+    if (!countryDetailView) {
+        return;
+    }
+
+    countryDetailView.classList.remove('hidden');
+    countryDetailView.innerHTML = renderDetailLoading();
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
+    try {
+        const country = await fetchCountryByCode(countryCode);
+
+        if (requestId !== activeDetailRequest) {
+            return;
+        }
+
+        countryDetailView.innerHTML = renderCountryDetail(country, allCountries);
+    } catch {
+        if (requestId !== activeDetailRequest) {
+            return;
+        }
+
+        countryDetailView.innerHTML = renderDetailError(countryCode);
+    }
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+}
+
+window.addEventListener('hashchange', () => {
+    void router();
+});
+
 async function init(): Promise<void> {
     if (!countriesGrid) {
         return;
@@ -88,14 +141,15 @@ async function init(): Promise<void> {
 
         if (allCountries.length === 0) {
             countriesGrid.innerHTML = renderEmpty('');
-            return;
+        } else {
+            renderCountryGrid(countriesGrid, allCountries);
         }
-
-        renderCountryGrid(countriesGrid, allCountries.slice(0, 8));
 
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
         }
+
+        await router();
     } catch (error) {
         const message = error instanceof Error ? error.message : 'Error desconocido';
         console.error(message);

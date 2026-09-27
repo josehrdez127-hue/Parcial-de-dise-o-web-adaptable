@@ -1,6 +1,8 @@
 [
   {
     "name": { "common": "Canadá" },
+    "cca2": "CA",
+    "cca3": "CAN",
     "capital": ["Ottawa"],
     "region": "Americas",
     "population": 38005238,
@@ -11,6 +13,8 @@
   },
   {
     "name": { "common": "Japón" },
+    "cca2": "JP",
+    "cca3": "JPN",
     "capital": ["Tokio"],
     "region": "Asia",
     "population": 125836021,
@@ -21,6 +25,8 @@
   },
   {
     "name": { "common": "Italia" },
+    "cca2": "IT",
+    "cca3": "ITA",
     "capital": ["Roma"],
     "region": "Europe",
     "population": 58870762,
@@ -31,6 +37,8 @@
   },
   {
     "name": { "common": "Australia" },
+    "cca2": "AU",
+    "cca3": "AUS",
     "capital": ["Canberra"],
     "region": "Oceania",
     "population": 26439111,
@@ -41,6 +49,8 @@
   },
   {
     "name": { "common": "España" },
+    "cca2": "ES",
+    "cca3": "ESP",
     "capital": ["Madrid"],
     "region": "Europe",
     "population": 47519628,
@@ -51,6 +61,8 @@
   },
   {
     "name": { "common": "Brasil" },
+    "cca2": "BR",
+    "cca3": "BRA",
     "capital": ["Brasilia"],
     "region": "Americas",
     "population": 216422446,
@@ -61,6 +73,8 @@
   },
   {
     "name": { "common": "Francia" },
+    "cca2": "FR",
+    "cca3": "FRA",
     "capital": ["París"],
     "region": "Europe",
     "population": 68106842,
@@ -71,6 +85,8 @@
   },
   {
     "name": { "common": "Egipto" },
+    "cca2": "EG",
+    "cca3": "EGY",
     "capital": ["El Cairo"],
     "region": "Africa",
     "population": 117335918,
@@ -81,6 +97,8 @@
   },
   {
     "name": { "common": "México" },
+    "cca2": "MX",
+    "cca3": "MEX",
     "capital": ["Ciudad de México"],
     "region": "Americas",
     "population": 128932753,
@@ -91,6 +109,8 @@
   },
   {
     "name": { "common": "Argentina" },
+    "cca2": "AR",
+    "cca3": "ARG",
     "capital": ["Buenos Aires"],
     "region": "Americas",
     "population": 45773884,
@@ -101,6 +121,8 @@
   },
   {
     "name": { "common": "Colombia" },
+    "cca2": "CO",
+    "cca3": "COL",
     "capital": ["Bogotá"],
     "region": "Americas",
     "population": 51874024,
@@ -111,6 +133,8 @@
   },
   {
     "name": { "common": "Perú" },
+    "cca2": "PE",
+    "cca3": "PER",
     "capital": ["Lima"],
     "region": "Americas",
     "population": 34049588,
@@ -121,6 +145,8 @@
   },
   {
     "name": { "common": "Chile" },
+    "cca2": "CL",
+    "cca3": "CHL",
     "capital": ["Santiago"],
     "region": "Americas",
     "population": 19629590,
@@ -131,6 +157,8 @@
   },
   {
     "name": { "common": "Alemania" },
+    "cca2": "DE",
+    "cca3": "DEU",
     "capital": ["Berlín"],
     "region": "Europe",
     "population": 83783942,
@@ -141,6 +169,8 @@
   },
   {
     "name": { "common": "Reino Unido" },
+    "cca2": "GB",
+    "cca3": "GBR",
     "capital": ["Londres"],
     "region": "Europe",
     "population": 67736802,
@@ -151,6 +181,8 @@
   },
   {
     "name": { "common": "Países Bajos" },
+    "cca2": "NL",
+    "cca3": "NLD",
     "capital": ["Ámsterdam"],
     "region": "Europe",
     "population": 17232124,
@@ -161,6 +193,8 @@
   },
   {
     "name": { "common": "Suecia" },
+    "cca2": "SE",
+    "cca3": "SWE",
     "capital": ["Estocolmo"],
     "region": "Europe",
     "population": 10353442,
@@ -171,6 +205,8 @@
   },
   {
     "name": { "common": "Grecia" },
+    "cca2": "GR",
+    "cca3": "GRC",
     "capital": ["Atenas"],
     "region": "Europe",
     "population": 10482455,
@@ -181,6 +217,8 @@
   },
   {
     "name": { "common": "India" },
+    "cca2": "IN",
+    "cca3": "IND",
     "capital": ["Nueva Delhi"],
     "region": "Asia",
     "population": 1428627663,
@@ -191,6 +229,8 @@
   },
   {
     "name": { "common": "China" },
+    "cca2": "CN",
+    "cca3": "CHN",
     "capital": ["Pekín"],
     "region": "Asia",
     "population": 1411778724,
@@ -201,6 +241,8 @@
   },
   {
     "name": { "common": "Corea del Sur" },
+    "cca2": "KR",
+    "cca3": "KOR",
     "capital": ["Seúl"],
     "region": "Asia",
     "population": 51784059,
@@ -211,6 +253,8 @@
   },
   {
     "name": { "common": "Tailandia" },
+    "cca2": "TH",
+    "cca3": "THA",
     "capital": ["Bangkok"],
     "region": "Asia",
     "population": 71801279,
@@ -221,6 +265,8 @@
   },
   {
     "name": { "common": "Vietnam" },
+    "cca2": "VN",
+    "cca3": "VNM",
     "capital": ["Hanói"],
     "region": "Asia",
     "population": 100300000,
@@ -231,6 +277,8 @@
   },
   {
     "name": { "common": "Nigeria" },
+    "cca2": "NG",
+    "cca3": "NGA",
     "capital": ["Abuya"],
     "region": "Africa",
     "population": 223804632,
@@ -241,6 +289,8 @@
   },
   {
     "name": { "common": "Kenia" },
+    "cca2": "KE",
+    "cca3": "KEN",
     "capital": ["Nairobi"],
     "region": "Africa",
     "population": 55100586,
@@ -251,6 +301,8 @@
   },
   {
     "name": { "common": "Sudáfrica" },
+    "cca2": "ZA",
+    "cca3": "ZAF",
     "capital": ["Pretoria"],
     "region": "Africa",
     "population": 60041941,
@@ -261,6 +313,8 @@
   },
   {
     "name": { "common": "Nueva Zelanda" },
+    "cca2": "NZ",
+    "cca3": "NZL",
     "capital": ["Wellington"],
     "region": "Oceania",
     "population": 5185288,
@@ -271,12 +325,136 @@
   },
   {
     "name": { "common": "Turquía" },
+    "cca2": "TR",
+    "cca3": "TUR",
     "capital": ["Ankara"],
     "region": "Asia",
     "population": 85816199,
     "flags": {
       "png": "https://flagcdn.com/w640/tr.png",
       "alt": "Bandera de Turquía"
+    }
+  },
+  {
+    "name": { "common": "Belice" },
+    "cca2": "BZ",
+    "cca3": "BLZ",
+    "capital": ["Belmopán"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 417072,
+    "tld": [".bz"],
+    "currencies": { "BZD": { "name": "Belize dollar", "symbol": "BZ$" } },
+    "languages": { "en": "English" },
+    "borders": ["GTM", "MEX"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/bz.png",
+      "alt": "Bandera de Belice"
+    }
+  },
+  {
+    "name": { "common": "Guatemala" },
+    "cca2": "GT",
+    "cca3": "GTM",
+    "capital": ["Ciudad de Guatemala"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 17915568,
+    "tld": [".gt"],
+    "currencies": { "GTQ": { "name": "Guatemalan quetzal", "symbol": "Q" } },
+    "languages": { "es": "Spanish" },
+    "borders": ["BLZ", "SLV", "HND", "MEX"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/gt.png",
+      "alt": "Bandera de Guatemala"
+    }
+  },
+  {
+    "name": { "common": "Honduras" },
+    "cca2": "HN",
+    "cca3": "HND",
+    "capital": ["Tegucigalpa"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 9904608,
+    "tld": [".hn"],
+    "currencies": { "HNL": { "name": "Honduran lempira", "symbol": "L" } },
+    "languages": { "es": "Spanish" },
+    "borders": ["GTM", "SLV", "NIC"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/hn.png",
+      "alt": "Bandera de Honduras"
+    }
+  },
+  {
+    "name": { "common": "El Salvador" },
+    "cca2": "SV",
+    "cca3": "SLV",
+    "capital": ["San Salvador"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 6029976,
+    "tld": [".sv"],
+    "currencies": { "USD": { "name": "United States dollar", "symbol": "$" } },
+    "languages": { "es": "Spanish" },
+    "borders": ["GTM", "HND"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/sv.png",
+      "alt": "Bandera de El Salvador"
+    }
+  },
+  {
+    "name": { "common": "Nicaragua" },
+    "cca2": "NI",
+    "cca3": "NIC",
+    "capital": ["Managua"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 6624554,
+    "tld": [".ni"],
+    "currencies": { "NIO": { "name": "Nicaraguan córdoba", "symbol": "C$" } },
+    "languages": { "es": "Spanish" },
+    "borders": ["CRI", "HND"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/ni.png",
+      "alt": "Bandera de Nicaragua"
+    }
+  },
+  {
+    "name": { "common": "Costa Rica" },
+    "cca2": "CR",
+    "cca3": "CRI",
+    "capital": ["San José"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 5094114,
+    "tld": [".cr"],
+    "currencies": { "CRC": { "name": "Costa Rican colón", "symbol": "₡" } },
+    "languages": { "es": "Spanish" },
+    "borders": ["NIC", "PAN"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/cr.png",
+      "alt": "Bandera de Costa Rica"
+    }
+  },
+  {
+    "name": { "common": "Panamá" },
+    "cca2": "PA",
+    "cca3": "PAN",
+    "capital": ["Ciudad de Panamá"],
+    "region": "Americas",
+    "subregion": "Central America",
+    "population": 4314768,
+    "tld": [".pa"],
+    "currencies": {
+      "PAB": { "name": "Panamanian balboa", "symbol": "B/." },
+      "USD": { "name": "United States dollar", "symbol": "$" }
+    },
+    "languages": { "es": "Spanish" },
+    "borders": ["COL", "CRI"],
+    "flags": {
+      "png": "https://flagcdn.com/w640/pa.png",
+      "alt": "Bandera de Panamá"
     }
   }
 ]
