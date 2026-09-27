@@ -1,6 +1,7 @@
 import './style.css';
 import { fetchCountries } from './api/countries';
 import { renderCountryGrid } from './render/countryGrid';
+import { renderEmpty, renderError, renderLoading } from './render/states';
 import type { Country } from './types/country';
 import { filterCountries as filterCountryList } from './utils/filter';
 
@@ -54,7 +55,15 @@ function applyFilters(): void {
     const selectedRegion = regionFilter?.value ?? 'all';
 
     const filteredCountries = filterCountryList(allCountries, searchText, selectedRegion);
-    renderCountryGrid(countriesGrid, filteredCountries);
+
+    if (filteredCountries.length > 0) {
+        renderCountryGrid(countriesGrid, filteredCountries);
+        return;
+    }
+
+    if (countriesGrid) {
+        countriesGrid.innerHTML = renderEmpty(searchText);
+    }
 }
 
 function handleSearchInput(): void {
@@ -68,23 +77,34 @@ searchInput?.addEventListener('input', handleSearchInput);
 regionFilter?.addEventListener('change', applyFilters);
 
 async function init(): Promise<void> {
+    if (!countriesGrid) {
+        return;
+    }
+
+    countriesGrid.innerHTML = renderLoading();
+
     try {
         allCountries = await fetchCountries();
-        applyFilters();
+
+        if (allCountries.length === 0) {
+            countriesGrid.innerHTML = renderEmpty('');
+            return;
+        }
+
+        renderCountryGrid(countriesGrid, allCountries.slice(0, 8));
 
         if (typeof lucide !== 'undefined') {
             lucide.createIcons();
         }
     } catch (error) {
-        console.error(error);
+        const message = error instanceof Error ? error.message : 'Error desconocido';
+        console.error(message);
+        renderError(countriesGrid, 'No se pudieron cargar los países.');
 
-        if (countriesGrid) {
-            countriesGrid.innerHTML = `
-                <p class="col-span-full text-center text-red-500 py-10">
-                    No se pudieron cargar los países.
-                </p>
-            `;
-        }
+        const retryButton = document.querySelector<HTMLButtonElement>('#retry-button');
+        retryButton?.addEventListener('click', () => {
+            void init();
+        });
     }
 }
 
