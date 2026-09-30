@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+.country-card-title {
+    font-size: clamp(1.25rem, 2cqi + 0.75rem, 1.5rem);
+}
+
+.country-card-copy {
+    font-size: clamp(0.875rem, 1cqi + 0.625rem, 1rem);
+}
+
 article {
     transition: transform 300ms ease, box-shadow 300ms ease;
 }

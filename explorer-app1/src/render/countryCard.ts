@@ -21,7 +21,7 @@ export function createCountryCard(country: Country): HTMLElement {
         : '';
 
     card.className =
-        'block bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition';
+        '@container block bg-white rounded-xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition';
     card.href = `#/country/${country.cca2}`;
     card.setAttribute('aria-label', `Ver detalles de ${country.name.common}`);
 
@@ -33,31 +33,33 @@ export function createCountryCard(country: Country): HTMLElement {
         >
 
         <div class="p-5">
-            <h2 class="text-xl font-bold mb-4">
+            <h2 class="country-card-title text-xl font-bold mb-4">
                 ${country.name.common}
             </h2>
 
-            <p class="text-sm text-slate-600 mb-2">
-                <span class="font-semibold text-slate-900">Región:</span>
-                ${regionName}
-            </p>
-
-            ${subregionName ? `
-                <p class="text-sm text-slate-600 mb-2">
-                    <span class="font-semibold text-slate-900">Subregión:</span>
-                    ${subregionName}
+            <div class="grid grid-cols-1 @sm:grid-cols-2!">
+                <p class="country-card-copy text-sm text-slate-600 mb-2">
+                    <span class="font-semibold text-slate-900">Región:</span>
+                    ${regionName}
                 </p>
-            ` : ''}
 
-            <p class="text-sm text-slate-600 mb-2">
-                <span class="font-semibold text-slate-900">Capital:</span>
-                ${capital}
-            </p>
+                ${subregionName ? `
+                    <p class="country-card-copy text-sm text-slate-600 mb-2">
+                        <span class="font-semibold text-slate-900">Subregión:</span>
+                        ${subregionName}
+                    </p>
+                ` : ''}
 
-            <p class="text-sm text-slate-600">
-                <span class="font-semibold text-slate-900">Población:</span>
-                ${formatPopulation(country.population)}
-            </p>
+                <p class="country-card-copy text-sm text-slate-600 mb-2">
+                    <span class="font-semibold text-slate-900">Capital:</span>
+                    ${capital}
+                </p>
+
+                <p class="country-card-copy text-sm text-slate-600">
+                    <span class="font-semibold text-slate-900">Población:</span>
+                    ${formatPopulation(country.population)}
+                </p>
+            </div>
         </div>
     `;
 
