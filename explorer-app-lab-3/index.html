@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f3f7f2" />
+    <meta name="description" content="Explora países, busca por nombre y filtra por región." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+    <title>Atlas | Explorador de países</title>
+  </head>
+  <body>
+    <div class="site-frame">
+      <header class="site-header">
+        <a class="brand" href="#" aria-label="Atlas, inicio">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="brand-copy"><strong>ATLAS</strong><small>WORLD INDEX</small></span>
+        </a>
+        <div class="header-meta">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>DIRECTORIO DE PAÍSES</span>
+          <span class="header-year">2026</span>
+        </div>
+      </header>
+
+      <main class="page-shell">
+        <section id="country-list-view" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-line"></span> UNA VISTA DEL MUNDO</p>
+            <h1 id="page-title">Países, vistos<br /><em>en detalle.</em></h1>
+            <p class="hero-description">Busca por nombre o recorre las regiones para descubrir datos de cada país.</p>
+          </div>
+
+          <section class="explorer-tools" aria-label="Buscar y filtrar países">
+            <label class="search-field" for="country-search">
+              <span class="search-glyph" aria-hidden="true"></span>
+              <span class="sr-only">Buscar país por nombre</span>
+              <input id="country-search" type="search" placeholder="Escribe el nombre de un país..." autocomplete="off" />
+              <button id="clear-search" class="clear-search" type="button" aria-label="Limpiar búsqueda" hidden>×</button>
+            </label>
+            <label class="region-field" for="region-filter">
+              <span>REGIÓN</span>
+              <select id="region-filter" aria-label="Filtrar por región">
+                <option value="all">Todas las regiones</option>
+                <option value="Africa">África</option>
+                <option value="Americas">América</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europa</option>
+                <option value="Oceania">Oceanía</option>
+              </select>
+            </label>
+          </section>
+
+          <div class="results-bar">
+            <h2 id="results-heading">Explora el directorio</h2>
+            <p id="results-count" class="results-count" aria-live="polite"></p>
+          </div>
+
+          <section id="countries-grid" class="country-grid" aria-label="Países"></section>
+        </section>
+
+        <section id="country-detail-view" class="detail-view" aria-live="polite" hidden></section>
+      </main>
+
+      <footer class="site-footer">
+        <span>ATLAS <span class="footer-separator">/</span> EXPLORADOR DE PAÍSES</span>
+        <span>Fuente: JSON local de la actividad</span>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
