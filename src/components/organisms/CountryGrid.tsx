@@ -11,7 +11,7 @@ export function CountryGrid({ countries, onSelect }: CountryGridProps): JSX.Elem
   return (
     <section
       aria-label="Países de ejemplo"
-      className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
     >
       {countries.map((country) => (
         <CountryCard

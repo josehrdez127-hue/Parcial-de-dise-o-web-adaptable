@@ -34,13 +34,15 @@ pnpm build
 - `src/App.tsx` combina `Header` y `CountryGrid`, entrega el arreglo local y define la acción de selección.
 - `src/components/atoms/Badge.tsx` muestra la región y `src/components/atoms/Flag.tsx` muestra la bandera.
 - `src/components/molecules/CountryCard.tsx` recibe `country: Country` y `onSelect`; combina `Flag` y `Badge`.
-- `src/components/organisms/CountryGrid.tsx` recibe `countries: Country[]` y `onSelect`, y crea una tarjeta por país con `map()` y una key basada en `cca2`.
-- `src/components/organisms/Header.tsx` recibe contenido mediante `children`.
+- `src/components/organisms/CountryGrid.tsx` recibe `countries: Country[]` y `onSelect`, crea una tarjeta por país con `map()` y una key basada en `cca2`, y adapta su cuadrícula de una a cuatro columnas según el ancho de pantalla.
+- `src/components/molecules/SearchBar.tsx` y `src/components/molecules/RegionFilter.tsx` son controles controlados con props y callbacks tipados.
+- `src/components/organisms/Header.tsx` recibe contenido mediante `children` y transmite el estado y los callbacks de filtros a sus controles.
+- `src/App.tsx` mantiene `query` y `region`, combina ambos filtros y entrega los países coincidentes a `CountryGrid`.
 - `src/types/country.ts` conserva el contrato de país de la versión Vanilla TypeScript.
 - `src/utils/format.ts` conserva `formatPopulation`, que agrupa la población usando la configuración regional `es-SV`.
 - `src/data/countries-demo.ts` guarda cuatro ejemplos con el tipo `Country`.
 
-La barra de búsqueda y el selector conservan la apariencia de Explorer 1; el filtrado reactivo se trabajará en la siguiente sesión.
+La barra de búsqueda y el selector conservan la apariencia de Explorer 1 y funcionan como componentes controlados. La búsqueda por nombre y el filtro por región se aplican juntos; al limpiar la búsqueda o seleccionar la opción predeterminada de región, se actualizan los resultados inmediatamente.
 
 ## Lo que aprendí
 
