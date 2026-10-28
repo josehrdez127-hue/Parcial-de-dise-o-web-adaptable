@@ -10,20 +10,38 @@ Esta es mi primera migración de Explorer App a React. Conservé el encabezado, 
 - lucide-react para los iconos de búsqueda y navegación
 - pnpm
 
-## Requisitos y comandos
+## Cómo ejecutar el proyecto
 
-Se recomienda Node.js 22.12 o posterior dentro de la versión 22, además de pnpm.
+Necesitas Node.js 22.12 o posterior dentro de la versión 22 y pnpm.
+
+1. Clona la rama de entrega:
+
+```sh
+git clone --branch parcial-2 --single-branch https://github.com/josehrdez127-hue/Parcial-de-dise-o-web-adaptable.git ExplorerApp
+cd ExplorerApp
+```
+
+2. Instala las dependencias:
 
 ```sh
 pnpm install
+```
+
+3. Inicia el servidor de desarrollo:
+
+```sh
 pnpm dev
 ```
 
-Para comprobar la compilación:
+Vite mostrará en la terminal la dirección local para abrir la aplicación en el navegador. Para detener el servidor, pulsa `Ctrl+C`.
+
+4. Para generar la versión de producción y comprobar los tipos:
 
 ```sh
 pnpm build
 ```
+
+El resultado de producción se genera en la carpeta `dist/`.
 
 ## Captura
 
